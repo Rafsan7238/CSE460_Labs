@@ -1,0 +1,741 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+21
+2996
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+lpm_add_sub
+# storage
+db|Exp1.(1).cnf
+db|Exp1.(1).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|lpm_add_sub.tdf
+1c1195a367bf9152c0cd4ed197d726c2
+7
+# user_parameter {
+LPM_WIDTH
+6
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+ADD
+PARAMETER_UNKNOWN
+USR
+ONE_INPUT_IS_CONSTANT
+NO
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+DEF
+REGISTERED_AT_END
+0
+PARAMETER_UNKNOWN
+DEF
+OPTIMIZE_FOR_SPEED
+1
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+DEF
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+FLEX10KE
+PARAMETER_UNKNOWN
+USR
+USE_WYS
+OFF
+PARAMETER_UNKNOWN
+DEF
+STYLE
+FAST
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+add_sub_5nh
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+datab5
+-1
+1
+cin
+-1
+1
+datab0
+-1
+2
+dataa5
+-1
+2
+dataa0
+-1
+2
+}
+# include_file {
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|alt_mercury_add_sub.inc
+ae39f15ed67cc9a095d29f68f6ad0f8
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|alt_stratix_add_sub.inc
+c08f604aefba5b4f1f554e565113c6
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|addcore.inc
+ff795e21e4847824c03218724f1a1252
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|aglobal81.inc
+ba79644cade9dcbd5df4af72a9b02986
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|look_add.inc
+ab9f577d30c5ef3166fab6c1c32c4a
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|bypassff.inc
+8e8df160d449a63ec15dc86ecf2b373f
+}
+# macro_sequence
+
+# end
+# entity
+addcore
+# storage
+db|Exp1.(2).cnf
+db|Exp1.(2).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|addcore.tdf
+55a4a9a4693311ccdbc64593a6d3f8b2
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+width
+6
+PARAMETER_UNKNOWN
+USR
+REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+DIRECTION
+ADD
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+FLEX10KE
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cin
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|addcore.inc
+ff795e21e4847824c03218724f1a1252
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|a_csnbuffer.inc
+49de46f6a395e2e6edecabe6eac9d873
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|aglobal81.inc
+ba79644cade9dcbd5df4af72a9b02986
+}
+# macro_sequence
+
+# end
+# entity
+a_csnbuffer
+# storage
+db|Exp1.(3).cnf
+db|Exp1.(3).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|a_csnbuffer.tdf
+0a953daa377c9212d3c374d37725bd
+7
+# user_parameter {
+WIDTH
+6
+PARAMETER_UNKNOWN
+USR
+NEED_CARRY
+0
+PARAMETER_UNKNOWN
+DEF
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sout0
+-1
+3
+sin0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+a_csnbuffer
+# storage
+db|Exp1.(4).cnf
+db|Exp1.(4).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|a_csnbuffer.tdf
+0a953daa377c9212d3c374d37725bd
+7
+# user_parameter {
+WIDTH
+6
+PARAMETER_UNKNOWN
+USR
+NEED_CARRY
+1
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sout5
+-1
+3
+sout4
+-1
+3
+sout3
+-1
+3
+sout2
+-1
+3
+sout1
+-1
+3
+sout0
+-1
+3
+sin5
+-1
+3
+sin4
+-1
+3
+sin3
+-1
+3
+sin2
+-1
+3
+sin1
+-1
+3
+sin0
+-1
+3
+cout5
+-1
+3
+cout4
+-1
+3
+cout3
+-1
+3
+cout2
+-1
+3
+cout1
+-1
+3
+cout0
+-1
+3
+cin5
+-1
+3
+cin4
+-1
+3
+cin3
+-1
+3
+cin2
+-1
+3
+cin1
+-1
+3
+cin0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+altshift
+# storage
+db|Exp1.(5).cnf
+db|Exp1.(5).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|altshift.tdf
+7694c4e3d2c62dd2f149c63f73db8
+7
+# user_parameter {
+WIDTH
+6
+PARAMETER_UNKNOWN
+USR
+DEPTH
+0
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+altshift
+# storage
+db|Exp1.(6).cnf
+db|Exp1.(6).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|altshift.tdf
+7694c4e3d2c62dd2f149c63f73db8
+7
+# user_parameter {
+WIDTH
+1
+PARAMETER_UNKNOWN
+USR
+DEPTH
+0
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result0
+-1
+3
+data0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_add_sub
+# storage
+db|Exp1.(7).cnf
+db|Exp1.(7).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|lpm_add_sub.tdf
+1c1195a367bf9152c0cd4ed197d726c2
+7
+# user_parameter {
+LPM_WIDTH
+6
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+ADD
+PARAMETER_UNKNOWN
+USR
+ONE_INPUT_IS_CONSTANT
+NO
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+DEF
+REGISTERED_AT_END
+0
+PARAMETER_UNKNOWN
+DEF
+OPTIMIZE_FOR_SPEED
+1
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+DEF
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+FLEX10KE
+PARAMETER_UNKNOWN
+USR
+USE_WYS
+OFF
+PARAMETER_UNKNOWN
+DEF
+STYLE
+FAST
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+add_sub_5nh
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+datab5
+-1
+1
+dataa5
+-1
+1
+cin
+-1
+1
+datab0
+-1
+2
+}
+# include_file {
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|alt_mercury_add_sub.inc
+ae39f15ed67cc9a095d29f68f6ad0f8
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|alt_stratix_add_sub.inc
+c08f604aefba5b4f1f554e565113c6
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|addcore.inc
+ff795e21e4847824c03218724f1a1252
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|aglobal81.inc
+ba79644cade9dcbd5df4af72a9b02986
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|look_add.inc
+ab9f577d30c5ef3166fab6c1c32c4a
+..|..|..|..|..|..|..|program files (x86)|quartus|libraries|megafunctions|bypassff.inc
+8e8df160d449a63ec15dc86ecf2b373f
+}
+# macro_sequence
+
+# end
+# entity
+Exp1
+# storage
+db|Exp1.(0).cnf
+db|Exp1.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+Exp1.v
+e151cc6e9416f7cd167066ebc4ba7837
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
