@@ -1,0 +1,7 @@
+
+State Machine - |fsm1_assessment|present
+Name present.s3 present.s2 present.s1 present.s0 
+present.s0 0 0 0 0 
+present.s1 0 0 1 1 
+present.s2 0 1 0 1 
+present.s3 1 0 0 1 
