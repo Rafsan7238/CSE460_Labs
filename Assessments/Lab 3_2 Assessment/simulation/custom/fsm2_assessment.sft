@@ -1,0 +1,4 @@
+set tool_name "Custom Verilog HDL"
+set corner_file_list {
+	{{"Slow Model"} {fsm2_assessment.vo fsm2_assessment_v.sdo}}
+}

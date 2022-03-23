@@ -1,0 +1,302 @@
+// Copyright (C) 1991-2008 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II"
+// VERSION "Version 8.1 Build 163 10/28/2008 SJ Web Edition"
+
+// DATE "03/24/2022 00:29:13"
+
+// 
+// Device: Altera EPF10K30ETC144-1 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for Custom Verilog HDL only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module fsm2_assessment (
+	clk,
+	rst,
+	w,
+	z);
+input 	clk;
+input 	rst;
+input 	w;
+output 	z;
+
+wire gnd = 1'b0;
+wire vcc = 1'b1;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("fsm2_assessment_v.sdo");
+// synopsys translate_on
+
+wire \w~dataout ;
+wire \rst~dataout ;
+wire \clk~dataout ;
+wire \present.F~regout ;
+wire \present.B~regout ;
+wire \present.C~regout ;
+wire \present.D~regout ;
+wire \present.E~regout ;
+wire \z~0_combout ;
+
+
+// atom is at PIN_124
+flex10ke_io \w~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(\w~dataout ),
+	.padio(w));
+// synopsys translate_off
+defparam \w~I .feedback_mode = "from_pin";
+defparam \w~I .operation_mode = "input";
+defparam \w~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_126
+flex10ke_io \rst~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(\rst~dataout ),
+	.padio(rst));
+// synopsys translate_off
+defparam \rst~I .feedback_mode = "from_pin";
+defparam \rst~I .operation_mode = "input";
+defparam \rst~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_55
+flex10ke_io \clk~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(\clk~dataout ),
+	.padio(clk));
+// synopsys translate_off
+defparam \clk~I .feedback_mode = "from_pin";
+defparam \clk~I .operation_mode = "input";
+defparam \clk~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at LC2_C19
+flex10ke_lcell \present.F (
+// Equation(s):
+// \present.F~regout  = DFFEA(\present.D~regout  & \w~dataout , GLOBAL(\clk~dataout ), GLOBAL(\rst~dataout ), , , , )
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\present.D~regout ),
+	.datad(\w~dataout ),
+	.aclr(!\rst~dataout ),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(gnd),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\present.F~regout ),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \present.F .clock_enable_mode = "false";
+defparam \present.F .lut_mask = "f000";
+defparam \present.F .operation_mode = "normal";
+defparam \present.F .output_mode = "reg_only";
+defparam \present.F .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC6_C19
+flex10ke_lcell \present.B (
+// Equation(s):
+// \present.B~regout  = DFFEA(\w~dataout  & !\present.E~regout  & !\present.C~regout  & !\present.D~regout , GLOBAL(\clk~dataout ), GLOBAL(\rst~dataout ), , , , )
+
+	.dataa(\w~dataout ),
+	.datab(\present.E~regout ),
+	.datac(\present.C~regout ),
+	.datad(\present.D~regout ),
+	.aclr(!\rst~dataout ),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(gnd),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\present.B~regout ),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \present.B .clock_enable_mode = "false";
+defparam \present.B .lut_mask = "0002";
+defparam \present.B .operation_mode = "normal";
+defparam \present.B .output_mode = "reg_only";
+defparam \present.B .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC4_C19
+flex10ke_lcell \present.C (
+// Equation(s):
+// \present.C~regout  = DFFEA(!\w~dataout  & (\present.F~regout  # \present.B~regout ), GLOBAL(\clk~dataout ), GLOBAL(\rst~dataout ), , , , )
+
+	.dataa(vcc),
+	.datab(\w~dataout ),
+	.datac(\present.F~regout ),
+	.datad(\present.B~regout ),
+	.aclr(!\rst~dataout ),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(gnd),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\present.C~regout ),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \present.C .clock_enable_mode = "false";
+defparam \present.C .lut_mask = "3330";
+defparam \present.C .operation_mode = "normal";
+defparam \present.C .output_mode = "reg_only";
+defparam \present.C .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC3_C19
+flex10ke_lcell \present.D (
+// Equation(s):
+// \present.D~regout  = DFFEA(\w~dataout  & (\present.E~regout  # \present.C~regout ), GLOBAL(\clk~dataout ), GLOBAL(\rst~dataout ), , , , )
+
+	.dataa(vcc),
+	.datab(\w~dataout ),
+	.datac(\present.E~regout ),
+	.datad(\present.C~regout ),
+	.aclr(!\rst~dataout ),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(gnd),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\present.D~regout ),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \present.D .clock_enable_mode = "false";
+defparam \present.D .lut_mask = "ccc0";
+defparam \present.D .operation_mode = "normal";
+defparam \present.D .output_mode = "reg_only";
+defparam \present.D .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC1_C19
+flex10ke_lcell \present.E (
+// Equation(s):
+// \present.E~regout  = DFFEA(!\w~dataout  & \present.D~regout , GLOBAL(\clk~dataout ), GLOBAL(\rst~dataout ), , , , )
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\w~dataout ),
+	.datad(\present.D~regout ),
+	.aclr(!\rst~dataout ),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(gnd),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\present.E~regout ),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \present.E .clock_enable_mode = "false";
+defparam \present.E .lut_mask = "0f00";
+defparam \present.E .operation_mode = "normal";
+defparam \present.E .output_mode = "reg_only";
+defparam \present.E .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC5_C19
+flex10ke_lcell \z~0 (
+// Equation(s):
+// \z~0_combout  = \present.E~regout  # \present.F~regout 
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\present.E~regout ),
+	.datad(\present.F~regout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.clk(gnd),
+	.cin(gnd),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\z~0_combout ),
+	.regout(),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \z~0 .clock_enable_mode = "false";
+defparam \z~0 .lut_mask = "fff0";
+defparam \z~0 .operation_mode = "normal";
+defparam \z~0 .output_mode = "comb_only";
+defparam \z~0 .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at PIN_51
+flex10ke_io \z~I (
+	.datain(\z~0_combout ),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(),
+	.padio(z));
+// synopsys translate_off
+defparam \z~I .feedback_mode = "none";
+defparam \z~I .operation_mode = "output";
+defparam \z~I .reg_source_mode = "none";
+// synopsys translate_on
+
+endmodule

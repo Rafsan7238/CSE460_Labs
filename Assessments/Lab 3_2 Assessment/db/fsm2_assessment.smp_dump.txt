@@ -1,0 +1,9 @@
+
+State Machine - |fsm2_assessment|present
+Name present.F present.E present.D present.C present.B present.A 
+present.A 0 0 0 0 0 0 
+present.B 0 0 0 0 1 1 
+present.C 0 0 0 1 0 1 
+present.D 0 0 1 0 0 1 
+present.E 0 1 0 0 0 1 
+present.F 1 0 0 0 0 1 

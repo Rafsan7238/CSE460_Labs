@@ -1,0 +1,12 @@
+|fsm2_assessment
+clk => present~0.IN1
+rst => present~1.IN1
+w => Selector1.IN2
+w => Selector3.IN0
+w => next.F.DATAB
+w => next.E.DATAB
+w => Selector2.IN0
+w => Selector0.IN0
+z <= z~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
