@@ -1,0 +1,14 @@
+|problem2_18301033
+clk => present.CLK
+rst => present.ACLR
+mny[0] => Equal0.IN0
+mny[0] => Equal1.IN0
+mny[0] => Equal2.IN1
+mny[1] => Equal0.IN1
+mny[1] => Equal1.IN1
+mny[1] => Equal2.IN0
+buy <= buy$latch.DB_MAX_OUTPUT_PORT_TYPE
+chg[0] <= chg[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+chg[1] <= chg[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

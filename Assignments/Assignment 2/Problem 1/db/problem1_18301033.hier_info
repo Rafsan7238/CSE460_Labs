@@ -1,0 +1,11 @@
+|problem1_18301033
+clk => present~0.IN1
+rst => present~1.IN1
+w => Selector1.IN1
+w => next.D.DATAB
+w => Selector2.IN0
+w => Selector0.IN1
+w => z~0.DATAB
+z <= z~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
