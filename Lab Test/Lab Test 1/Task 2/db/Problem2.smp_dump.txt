@@ -1,0 +1,7 @@
+
+State Machine - |Problem2|present
+Name present.D present.C present.B present.A 
+present.A 0 0 0 0 
+present.B 0 0 1 1 
+present.C 0 1 0 1 
+present.D 1 0 0 1 

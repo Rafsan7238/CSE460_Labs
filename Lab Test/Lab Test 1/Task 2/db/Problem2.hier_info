@@ -1,0 +1,9 @@
+|Problem2
+clk => present~1.DATAIN
+rst => present~3.DATAIN
+w => present.B.DATAIN
+w => next.D.DATAB
+w => Selector0.IN1
+w => next.C.DATAB
+
+
