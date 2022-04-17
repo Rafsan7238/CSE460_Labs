@@ -1,0 +1,17 @@
+module problem4_18301033 (B, C, D, x, y);
+
+input B, C, D;
+output x, y;
+wire w1, w2, w3, w4, w5, w6;
+
+and(w1, C, D);
+or(w2, C, D);
+not(w3, w2);
+or(y, w1, w3);
+
+not(w4, B);
+and(w5, B, w3);
+and(w6, w2, w4);
+or(x, w5, w6);
+
+endmodule;
