@@ -1,0 +1,18 @@
+// DSCH 2.7a
+// 22/07/2019 11:32:26
+// example.sch
+
+module example( clk2,clk1,out1);
+ input clk2,clk1;
+ output out1;
+ xor #(16) xor2(out1,clk1,clk2);
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#2000 clk2=~clk2;
+#1000 clk1=~clk1;
+
+// Simulation parameters
+// clk2 CLK 20.000 20.000
+// clk1 CLK 10.000 10.000
